@@ -295,6 +295,12 @@ while IFS= read -r -d '' d; do
     echo ""
     log_info "→ Processing file $file_count/$total_files_dir (${progress}%): $(basename "$file")"
 
+    # Skip empty files (0 bytes)
+    if [[ ! -s "$file" ]]; then
+      log_warn "Skipping empty file: $(basename "$file")"
+      continue
+    fi
+
     if [[ "$RENAME" == "true" ]]; then
       target_dir=$(dirname "$file")
       exiftool_opts=(-overwrite_original)
