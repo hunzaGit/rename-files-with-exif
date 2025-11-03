@@ -187,7 +187,7 @@ El uso del sufijo "backup" transformaría la misma foto en "20230814_154500_back
 
 ### Selección del tipo de archivo
 
-El parámetro **extensions** controla qué tipos de archivos se procesan. De forma predeterminada, el script maneja formatos de foto comunes (JPG, JPEG, PNG, HEIC, DNG) y formatos de vídeo (MP4, MOV, 3GP), además de MPO para panorámicas:
+El parámetro **extensions** controla qué tipos de archivos se procesan. De forma predeterminada, el script maneja formatos de foto comunes (JPG, JPEG, PNG, HEIC, DNG) y formatos de vídeo (MP4, MOV, 3GP, AVI), además de MPO para panorámicas:
 
 ```bash
 --ext "<extensions>"  o  -e "<extensions>"

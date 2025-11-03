@@ -19,7 +19,7 @@ SOURCE_DIR=""
 TARGET_DIR="DCIM"     # default value
 PREFIX=""
 SUFFIX=""
-EXTENSIONS="jpg jpeg png heic mpo mp4 mov 3gp dng"   # default value
+EXTENSIONS="jpg jpeg png heic mpo mp4 mov 3gp dng avi"   # default value
 RENAME=false
 USE_DATE_NAME=true
 OUTPUT_DIR="renamed"
@@ -49,7 +49,7 @@ IGNORE_DIRS="renamed"   # <--- default value added
 #   -t, --target       Directory where to search for files (default: "DCIM")
 #   -p, --prefix       Prefix for names (e.g., "WA" → WA_20230814.jpg)
 #   --suffix           Suffix for names (e.g., "backup" → 20230814_backup.jpg)
-#   -e, --ext          Extensions to process (default: jpg jpeg png heic mpo mp4 mov 3gp dng)
+#   -e, --ext          Extensions to process (default: jpg jpeg png heic mpo mp4 mov 3gp dng avi)
 #   -r, --rename       true=renames originals, false=copies to OUTPUT_DIR (default: false)
 #   -o, --output       Destination folder if --rename=false (default: "renamed")
 #   -dn, --use_date_name  true=prioritizes date in name if it differs from EXIF (default: true)
@@ -74,7 +74,7 @@ IGNORE_DIRS="renamed"   # <--- default value added
 #   • If --target is not specified, "DCIM" will be used.
 #   • If --prefix is not specified, the file name will not have a prefix.
 #   • If --suffix is not specified, the file name will not have a suffix (except "_PANO" in MPO extension).
-#   • If --ext is not specified, the following will be processed by default: jpg, jpeg, png, heic, mpo, mp4, mov, 3gp, dng
+#   • If --ext is not specified, the following will be processed by default: jpg, jpeg, png, heic, mpo, mp4, mov, 3gp, dng, avi
 #   • If --output is not specified, the renamed files are copied to "renamed".
 ### HELP END ##############################################################
 __HELP__

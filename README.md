@@ -183,7 +183,7 @@ Using suffix "backup" would transform the same photo into `20230814_154500_backu
 
 ### File Type Selection
 
-The **extensions** parameter controls which file types to process. By default, the script handles common photo formats (JPG, JPEG, PNG, HEIC, DNG) and video formats (MP4, MOV, 3GP), plus MPO for panoramas:
+The **extensions** parameter controls which file types to process. By default, the script handles common photo formats (JPG, JPEG, PNG, HEIC, DNG) and video formats (MP4, MOV, 3GP, AVI), plus MPO for panoramas:
 
 ```bash
 --ext "<extensions>"  or  -e "<extensions>"
